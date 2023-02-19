@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'drf_yasg',
+    'drf_spectacular',
     'django_large_image',
 ]
 
@@ -129,3 +129,10 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Resonant GeoData API',
+    'DESCRIPTION': 'Resonant GeoData',
+    'CONTACT': {'email': 'kitware@kitare.com'},
+    'LICENSE': {'name': 'Apache 2.0'}
+}
