@@ -23,6 +23,10 @@ class ExampleMixin(ConfigMixin):
         'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     }
 
+    SPECTACULAR_SETTINGS = {
+        'TITLE': 'Django Large Image',
+    }
+
     @staticmethod
     def mutate_configuration(configuration: ComposedConfiguration) -> None:
         # Install local apps first, to ensure any overridden resources are found first
